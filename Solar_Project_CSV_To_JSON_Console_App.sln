@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solar_Project_CSV_To_JSON_Console_App", "Solar_Project_CSV_To_JSON_Console_App\Solar_Project_CSV_To_JSON_Console_App.csproj", "{1294071A-4B51-4010-8EA0-0B3323CA92AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1294071A-4B51-4010-8EA0-0B3323CA92AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1294071A-4B51-4010-8EA0-0B3323CA92AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1294071A-4B51-4010-8EA0-0B3323CA92AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1294071A-4B51-4010-8EA0-0B3323CA92AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1F10C5C-87DE-4B3F-AE85-79D11EC82D6C}
+	EndGlobalSection
+EndGlobal
