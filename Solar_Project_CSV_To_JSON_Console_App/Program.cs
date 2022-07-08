@@ -353,7 +353,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             decimal AverageMay2000 = 0;
             #endregion
 
-
             //Jun Averages
             #region
             decimal monthAverageJun = 0;
@@ -484,8 +483,330 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             decimal AverageJul2000 = 0;
             #endregion
 
+            //Aug Averages
+            #region
+            decimal monthAverageAug = 0;
 
+            decimal tempTotalAug0600 = 0;
+            decimal countTotalAug0600 = 0;
+            decimal AverageAug0600 = 0;
 
+            decimal tempTotalAug0700 = 0;
+            decimal countTotalAug0700 = 0;
+            decimal AverageAug0700 = 0;
+
+            decimal tempTotalAug0800 = 0;
+            decimal countTotalAug0800 = 0;
+            decimal AverageAug0800 = 0;
+
+            decimal tempTotalAug0900 = 0;
+            decimal countTotalAug0900 = 0;
+            decimal AverageAug0900 = 0;
+
+            decimal tempTotalAug1000 = 0;
+            decimal countTotalAug1000 = 0;
+            decimal AverageAug1000 = 0;
+
+            decimal tempTotalAug1100 = 0;
+            decimal countTotalAug1100 = 0;
+            decimal AverageAug1100 = 0;
+
+            decimal tempTotalAug1200 = 0;
+            decimal countTotalAug1200 = 0;
+            decimal AverageAug1200 = 0;
+
+            decimal tempTotalAug1300 = 0;
+            decimal countTotalAug1300 = 0;
+            decimal AverageAug1300 = 0;
+
+            decimal tempTotalAug1400 = 0;
+            decimal countTotalAug1400 = 0;
+            decimal AverageAug1400 = 0;
+
+            decimal tempTotalAug1500 = 0;
+            decimal countTotalAug1500 = 0;
+            decimal AverageAug1500 = 0;
+
+            decimal tempTotalAug1600 = 0;
+            decimal countTotalAug1600 = 0;
+            decimal AverageAug1600 = 0;
+
+            decimal tempTotalAug1700 = 0;
+            decimal countTotalAug1700 = 0;
+            decimal AverageAug1700 = 0;
+
+            decimal tempTotalAug1800 = 0;
+            decimal countTotalAug1800 = 0;
+            decimal AverageAug1800 = 0;
+
+            decimal tempTotalAug1900 = 0;
+            decimal countTotalAug1900 = 0;
+            decimal AverageAug1900 = 0;
+
+            decimal tempTotalAug2000 = 0;
+            decimal countTotalAug2000 = 0;
+            decimal AverageAug2000 = 0;
+            #endregion
+
+            //Sep Averages
+            #region
+            decimal monthAverageSep = 0;
+
+            decimal tempTotalSep0600 = 0;
+            decimal countTotalSep0600 = 0;
+            decimal AverageSep0600 = 0;
+
+            decimal tempTotalSep0700 = 0;
+            decimal countTotalSep0700 = 0;
+            decimal AverageSep0700 = 0;
+
+            decimal tempTotalSep0800 = 0;
+            decimal countTotalSep0800 = 0;
+            decimal AverageSep0800 = 0;
+
+            decimal tempTotalSep0900 = 0;
+            decimal countTotalSep0900 = 0;
+            decimal AverageSep0900 = 0;
+
+            decimal tempTotalSep1000 = 0;
+            decimal countTotalSep1000 = 0;
+            decimal AverageSep1000 = 0;
+
+            decimal tempTotalSep1100 = 0;
+            decimal countTotalSep1100 = 0;
+            decimal AverageSep1100 = 0;
+
+            decimal tempTotalSep1200 = 0;
+            decimal countTotalSep1200 = 0;
+            decimal AverageSep1200 = 0;
+
+            decimal tempTotalSep1300 = 0;
+            decimal countTotalSep1300 = 0;
+            decimal AverageSep1300 = 0;
+
+            decimal tempTotalSep1400 = 0;
+            decimal countTotalSep1400 = 0;
+            decimal AverageSep1400 = 0;
+
+            decimal tempTotalSep1500 = 0;
+            decimal countTotalSep1500 = 0;
+            decimal AverageSep1500 = 0;
+
+            decimal tempTotalSep1600 = 0;
+            decimal countTotalSep1600 = 0;
+            decimal AverageSep1600 = 0;
+
+            decimal tempTotalSep1700 = 0;
+            decimal countTotalSep1700 = 0;
+            decimal AverageSep1700 = 0;
+
+            decimal tempTotalSep1800 = 0;
+            decimal countTotalSep1800 = 0;
+            decimal AverageSep1800 = 0;
+
+            decimal tempTotalSep1900 = 0;
+            decimal countTotalSep1900 = 0;
+            decimal AverageSep1900 = 0;
+
+            decimal tempTotalSep2000 = 0;
+            decimal countTotalSep2000 = 0;
+            decimal AverageSep2000 = 0;
+            #endregion
+
+            //Oct Averages
+            #region
+            decimal monthAverageOct = 0;
+
+            decimal tempTotalOct0600 = 0;
+            decimal countTotalOct0600 = 0;
+            decimal AverageOct0600 = 0;
+
+            decimal tempTotalOct0700 = 0;
+            decimal countTotalOct0700 = 0;
+            decimal AverageOct0700 = 0;
+
+            decimal tempTotalOct0800 = 0;
+            decimal countTotalOct0800 = 0;
+            decimal AverageOct0800 = 0;
+
+            decimal tempTotalOct0900 = 0;
+            decimal countTotalOct0900 = 0;
+            decimal AverageOct0900 = 0;
+
+            decimal tempTotalOct1000 = 0;
+            decimal countTotalOct1000 = 0;
+            decimal AverageOct1000 = 0;
+
+            decimal tempTotalOct1100 = 0;
+            decimal countTotalOct1100 = 0;
+            decimal AverageOct1100 = 0;
+
+            decimal tempTotalOct1200 = 0;
+            decimal countTotalOct1200 = 0;
+            decimal AverageOct1200 = 0;
+
+            decimal tempTotalOct1300 = 0;
+            decimal countTotalOct1300 = 0;
+            decimal AverageOct1300 = 0;
+
+            decimal tempTotalOct1400 = 0;
+            decimal countTotalOct1400 = 0;
+            decimal AverageOct1400 = 0;
+
+            decimal tempTotalOct1500 = 0;
+            decimal countTotalOct1500 = 0;
+            decimal AverageOct1500 = 0;
+
+            decimal tempTotalOct1600 = 0;
+            decimal countTotalOct1600 = 0;
+            decimal AverageOct1600 = 0;
+
+            decimal tempTotalOct1700 = 0;
+            decimal countTotalOct1700 = 0;
+            decimal AverageOct1700 = 0;
+
+            decimal tempTotalOct1800 = 0;
+            decimal countTotalOct1800 = 0;
+            decimal AverageOct1800 = 0;
+
+            decimal tempTotalOct1900 = 0;
+            decimal countTotalOct1900 = 0;
+            decimal AverageOct1900 = 0;
+
+            decimal tempTotalOct2000 = 0;
+            decimal countTotalOct2000 = 0;
+            decimal AverageOct2000 = 0;
+            #endregion
+
+            //Nov Averages
+            #region
+            decimal monthAverageNov = 0;
+
+            decimal tempTotalNov0600 = 0;
+            decimal countTotalNov0600 = 0;
+            decimal AverageNov0600 = 0;
+
+            decimal tempTotalNov0700 = 0;
+            decimal countTotalNov0700 = 0;
+            decimal AverageNov0700 = 0;
+
+            decimal tempTotalNov0800 = 0;
+            decimal countTotalNov0800 = 0;
+            decimal AverageNov0800 = 0;
+
+            decimal tempTotalNov0900 = 0;
+            decimal countTotalNov0900 = 0;
+            decimal AverageNov0900 = 0;
+
+            decimal tempTotalNov1000 = 0;
+            decimal countTotalNov1000 = 0;
+            decimal AverageNov1000 = 0;
+
+            decimal tempTotalNov1100 = 0;
+            decimal countTotalNov1100 = 0;
+            decimal AverageNov1100 = 0;
+
+            decimal tempTotalNov1200 = 0;
+            decimal countTotalNov1200 = 0;
+            decimal AverageNov1200 = 0;
+
+            decimal tempTotalNov1300 = 0;
+            decimal countTotalNov1300 = 0;
+            decimal AverageNov1300 = 0;
+
+            decimal tempTotalNov1400 = 0;
+            decimal countTotalNov1400 = 0;
+            decimal AverageNov1400 = 0;
+
+            decimal tempTotalNov1500 = 0;
+            decimal countTotalNov1500 = 0;
+            decimal AverageNov1500 = 0;
+
+            decimal tempTotalNov1600 = 0;
+            decimal countTotalNov1600 = 0;
+            decimal AverageNov1600 = 0;
+
+            decimal tempTotalNov1700 = 0;
+            decimal countTotalNov1700 = 0;
+            decimal AverageNov1700 = 0;
+
+            decimal tempTotalNov1800 = 0;
+            decimal countTotalNov1800 = 0;
+            decimal AverageNov1800 = 0;
+
+            decimal tempTotalNov1900 = 0;
+            decimal countTotalNov1900 = 0;
+            decimal AverageNov1900 = 0;
+
+            decimal tempTotalNov2000 = 0;
+            decimal countTotalNov2000 = 0;
+            decimal AverageNov2000 = 0;
+            #endregion
+
+            //Dec Averages
+            #region
+            decimal monthAverageDec = 0;
+
+            decimal tempTotalDec0600 = 0;
+            decimal countTotalDec0600 = 0;
+            decimal AverageDec0600 = 0;
+
+            decimal tempTotalDec0700 = 0;
+            decimal countTotalDec0700 = 0;
+            decimal AverageDec0700 = 0;
+
+            decimal tempTotalDec0800 = 0;
+            decimal countTotalDec0800 = 0;
+            decimal AverageDec0800 = 0;
+
+            decimal tempTotalDec0900 = 0;
+            decimal countTotalDec0900 = 0;
+            decimal AverageDec0900 = 0;
+
+            decimal tempTotalDec1000 = 0;
+            decimal countTotalDec1000 = 0;
+            decimal AverageDec1000 = 0;
+
+            decimal tempTotalDec1100 = 0;
+            decimal countTotalDec1100 = 0;
+            decimal AverageDec1100 = 0;
+
+            decimal tempTotalDec1200 = 0;
+            decimal countTotalDec1200 = 0;
+            decimal AverageDec1200 = 0;
+
+            decimal tempTotalDec1300 = 0;
+            decimal countTotalDec1300 = 0;
+            decimal AverageDec1300 = 0;
+
+            decimal tempTotalDec1400 = 0;
+            decimal countTotalDec1400 = 0;
+            decimal AverageDec1400 = 0;
+
+            decimal tempTotalDec1500 = 0;
+            decimal countTotalDec1500 = 0;
+            decimal AverageDec1500 = 0;
+
+            decimal tempTotalDec1600 = 0;
+            decimal countTotalDec1600 = 0;
+            decimal AverageDec1600 = 0;
+
+            decimal tempTotalDec1700 = 0;
+            decimal countTotalDec1700 = 0;
+            decimal AverageDec1700 = 0;
+
+            decimal tempTotalDec1800 = 0;
+            decimal countTotalDec1800 = 0;
+            decimal AverageDec1800 = 0;
+
+            decimal tempTotalDec1900 = 0;
+            decimal countTotalDec1900 = 0;
+            decimal AverageDec1900 = 0;
+
+            decimal tempTotalDec2000 = 0;
+            decimal countTotalDec2000 = 0;
+            decimal AverageDec2000 = 0;
+            #endregion
 
 
             //file is the full path of the directory.  
@@ -502,7 +823,12 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                 myfile = File.Create(targetPath);
                 myfile.Close();
             }
-            
+
+            sb.Append("[");
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+
 
             string[] row = File.ReadAllLines(path);
 
@@ -1176,7 +1502,7 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     //Jul Averages over the hours
                     #region
 
-                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "07:00")
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "06:00")
                     {
                         tempTotalJul0600 = tempTotalJul0600 + Convert.ToInt32(cell[4]);
                         countTotalJul0600++;
@@ -1268,11 +1594,480 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     }
                     #endregion
 
+                    //Aug Averages over the hours
+                    #region
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "06:00")
+                    {
+                        tempTotalAug0600 = tempTotalAug0600 + Convert.ToInt32(cell[4]);
+                        countTotalAug0600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "07:00")
+                    {
+                        tempTotalAug0700 = tempTotalAug0700 + Convert.ToInt32(cell[4]);
+                        countTotalAug0700++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "08:00")
+                    {
+                        tempTotalAug0800 = tempTotalAug0800 + Convert.ToInt32(cell[4]);
+                        countTotalAug0800++;
+                    }
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "09:00")
+                    {
+                        tempTotalAug0900 = tempTotalAug0900 + Convert.ToInt32(cell[4]);
+                        countTotalAug0900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "10:00")
+                    {
+                        tempTotalAug1000 = tempTotalAug1000 + Convert.ToInt32(cell[4]);
+                        countTotalAug1000++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "11:00")
+                    {
+                        tempTotalAug1100 = tempTotalAug1100 + Convert.ToInt32(cell[4]);
+                        countTotalAug1100++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "12:00")
+                    {
+                        tempTotalAug1200 = tempTotalAug1200 + Convert.ToInt32(cell[4]);
+                        countTotalAug1200++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "13:00")
+                    {
+                        tempTotalAug1300 = tempTotalAug1300 + Convert.ToInt32(cell[4]);
+                        countTotalAug1300++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "14:00")
+                    {
+                        tempTotalAug1400 = tempTotalAug1400 + Convert.ToInt32(cell[4]);
+                        countTotalAug1400++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "15:00")
+                    {
+                        tempTotalAug1500 = tempTotalAug1500 + Convert.ToInt32(cell[4]);
+                        countTotalAug1500++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "16:00")
+                    {
+                        tempTotalAug1600 = tempTotalAug1600 + Convert.ToInt32(cell[4]);
+                        countTotalAug1600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "17:00")
+                    {
+                        tempTotalAug1700 = tempTotalAug1700 + Convert.ToInt32(cell[4]);
+                        countTotalAug1700++;
+                    }
 
 
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "18:00")
+                    {
+                        tempTotalAug1800 = tempTotalAug1800 + Convert.ToInt32(cell[4]);
+                        countTotalAug1800++;
+                    }
 
 
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "19:00")
+                    {
+                        tempTotalAug1900 = tempTotalAug1900 + Convert.ToInt32(cell[4]);
+                        countTotalAug1900++;
+                    }
 
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "08" && cell[1] == "20:00")
+                    {
+                        tempTotalAug2000 = tempTotalAug2000 + Convert.ToInt32(cell[4]);
+                        countTotalAug2000++;
+                    }
+                    #endregion
+
+                    //Sep Averages over the hours
+                    #region
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "06:00")
+                    {
+                        tempTotalSep0600 = tempTotalSep0600 + Convert.ToInt32(cell[4]);
+                        countTotalSep0600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "07:00")
+                    {
+                        tempTotalSep0700 = tempTotalSep0700 + Convert.ToInt32(cell[4]);
+                        countTotalSep0700++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "08:00")
+                    {
+                        tempTotalSep0800 = tempTotalSep0800 + Convert.ToInt32(cell[4]);
+                        countTotalSep0800++;
+                    }
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "09:00")
+                    {
+                        tempTotalSep0900 = tempTotalSep0900 + Convert.ToInt32(cell[4]);
+                        countTotalSep0900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "10:00")
+                    {
+                        tempTotalSep1000 = tempTotalSep1000 + Convert.ToInt32(cell[4]);
+                        countTotalSep1000++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "11:00")
+                    {
+                        tempTotalSep1100 = tempTotalSep1100 + Convert.ToInt32(cell[4]);
+                        countTotalSep1100++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "12:00")
+                    {
+                        tempTotalSep1200 = tempTotalSep1200 + Convert.ToInt32(cell[4]);
+                        countTotalSep1200++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "13:00")
+                    {
+                        tempTotalSep1300 = tempTotalSep1300 + Convert.ToInt32(cell[4]);
+                        countTotalSep1300++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "14:00")
+                    {
+                        tempTotalSep1400 = tempTotalSep1400 + Convert.ToInt32(cell[4]);
+                        countTotalSep1400++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "15:00")
+                    {
+                        tempTotalSep1500 = tempTotalSep1500 + Convert.ToInt32(cell[4]);
+                        countTotalSep1500++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "16:00")
+                    {
+                        tempTotalSep1600 = tempTotalSep1600 + Convert.ToInt32(cell[4]);
+                        countTotalSep1600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "17:00")
+                    {
+                        tempTotalSep1700 = tempTotalSep1700 + Convert.ToInt32(cell[4]);
+                        countTotalSep1700++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "18:00")
+                    {
+                        tempTotalSep1800 = tempTotalSep1800 + Convert.ToInt32(cell[4]);
+                        countTotalSep1800++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "19:00")
+                    {
+                        tempTotalSep1900 = tempTotalSep1900 + Convert.ToInt32(cell[4]);
+                        countTotalSep1900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "09" && cell[1] == "20:00")
+                    {
+                        tempTotalSep2000 = tempTotalSep2000 + Convert.ToInt32(cell[4]);
+                        countTotalSep2000++;
+                    }
+                    #endregion
+
+                    //Oct Averages over the hours
+                    #region
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "06:00")
+                    {
+                        tempTotalOct0600 = tempTotalOct0600 + Convert.ToInt32(cell[4]);
+                        countTotalOct0600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "07:00")
+                    {
+                        tempTotalOct0700 = tempTotalOct0700 + Convert.ToInt32(cell[4]);
+                        countTotalOct0700++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "08:00")
+                    {
+                        tempTotalOct0800 = tempTotalOct0800 + Convert.ToInt32(cell[4]);
+                        countTotalOct0800++;
+                    }
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "09:00")
+                    {
+                        tempTotalOct0900 = tempTotalOct0900 + Convert.ToInt32(cell[4]);
+                        countTotalOct0900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "10:00")
+                    {
+                        tempTotalOct1000 = tempTotalOct1000 + Convert.ToInt32(cell[4]);
+                        countTotalOct1000++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "11:00")
+                    {
+                        tempTotalOct1100 = tempTotalOct1100 + Convert.ToInt32(cell[4]);
+                        countTotalOct1100++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "12:00")
+                    {
+                        tempTotalOct1200 = tempTotalOct1200 + Convert.ToInt32(cell[4]);
+                        countTotalOct1200++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "13:00")
+                    {
+                        tempTotalOct1300 = tempTotalOct1300 + Convert.ToInt32(cell[4]);
+                        countTotalOct1300++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "14:00")
+                    {
+                        tempTotalOct1400 = tempTotalOct1400 + Convert.ToInt32(cell[4]);
+                        countTotalOct1400++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "15:00")
+                    {
+                        tempTotalOct1500 = tempTotalOct1500 + Convert.ToInt32(cell[4]);
+                        countTotalOct1500++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "16:00")
+                    {
+                        tempTotalOct1600 = tempTotalOct1600 + Convert.ToInt32(cell[4]);
+                        countTotalOct1600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "17:00")
+                    {
+                        tempTotalOct1700 = tempTotalOct1700 + Convert.ToInt32(cell[4]);
+                        countTotalOct1700++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "18:00")
+                    {
+                        tempTotalOct1800 = tempTotalOct1800 + Convert.ToInt32(cell[4]);
+                        countTotalOct1800++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "19:00")
+                    {
+                        tempTotalOct1900 = tempTotalOct1900 + Convert.ToInt32(cell[4]);
+                        countTotalOct1900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "10" && cell[1] == "20:00")
+                    {
+                        tempTotalOct2000 = tempTotalOct2000 + Convert.ToInt32(cell[4]);
+                        countTotalOct2000++;
+                    }
+                    #endregion
+
+                    //Nov Averages over the hours
+                    #region
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "06:00")
+                    {
+                        tempTotalNov0600 = tempTotalNov0600 + Convert.ToInt32(cell[4]);
+                        countTotalNov0600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "07:00")
+                    {
+                        tempTotalNov0700 = tempTotalNov0700 + Convert.ToInt32(cell[4]);
+                        countTotalNov0700++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "08:00")
+                    {
+                        tempTotalNov0800 = tempTotalNov0800 + Convert.ToInt32(cell[4]);
+                        countTotalNov0800++;
+                    }
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "09:00")
+                    {
+                        tempTotalNov0900 = tempTotalNov0900 + Convert.ToInt32(cell[4]);
+                        countTotalNov0900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "10:00")
+                    {
+                        tempTotalNov1000 = tempTotalNov1000 + Convert.ToInt32(cell[4]);
+                        countTotalNov1000++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "11:00")
+                    {
+                        tempTotalNov1100 = tempTotalNov1100 + Convert.ToInt32(cell[4]);
+                        countTotalNov1100++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "12:00")
+                    {
+                        tempTotalNov1200 = tempTotalNov1200 + Convert.ToInt32(cell[4]);
+                        countTotalNov1200++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "13:00")
+                    {
+                        tempTotalNov1300 = tempTotalNov1300 + Convert.ToInt32(cell[4]);
+                        countTotalNov1300++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "14:00")
+                    {
+                        tempTotalNov1400 = tempTotalNov1400 + Convert.ToInt32(cell[4]);
+                        countTotalNov1400++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "15:00")
+                    {
+                        tempTotalNov1500 = tempTotalNov1500 + Convert.ToInt32(cell[4]);
+                        countTotalNov1500++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "16:00")
+                    {
+                        tempTotalNov1600 = tempTotalNov1600 + Convert.ToInt32(cell[4]);
+                        countTotalNov1600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "17:00")
+                    {
+                        tempTotalNov1700 = tempTotalNov1700 + Convert.ToInt32(cell[4]);
+                        countTotalNov1700++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "18:00")
+                    {
+                        tempTotalNov1800 = tempTotalNov1800 + Convert.ToInt32(cell[4]);
+                        countTotalNov1800++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "19:00")
+                    {
+                        tempTotalNov1900 = tempTotalNov1900 + Convert.ToInt32(cell[4]);
+                        countTotalNov1900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "11" && cell[1] == "20:00")
+                    {
+                        tempTotalNov2000 = tempTotalNov2000 + Convert.ToInt32(cell[4]);
+                        countTotalNov2000++;
+                    }
+                    #endregion
+
+                    //Dec Averages over the hours
+                    #region
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "06:00")
+                    {
+                        tempTotalDec0600 = tempTotalDec0600 + Convert.ToInt32(cell[4]);
+                        countTotalDec0600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "07:00")
+                    {
+                        tempTotalDec0700 = tempTotalDec0700 + Convert.ToInt32(cell[4]);
+                        countTotalDec0700++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "08:00")
+                    {
+                        tempTotalDec0800 = tempTotalDec0800 + Convert.ToInt32(cell[4]);
+                        countTotalDec0800++;
+                    }
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "09:00")
+                    {
+                        tempTotalDec0900 = tempTotalDec0900 + Convert.ToInt32(cell[4]);
+                        countTotalDec0900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "10:00")
+                    {
+                        tempTotalDec1000 = tempTotalDec1000 + Convert.ToInt32(cell[4]);
+                        countTotalDec1000++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "11:00")
+                    {
+                        tempTotalDec1100 = tempTotalDec1100 + Convert.ToInt32(cell[4]);
+                        countTotalDec1100++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "12:00")
+                    {
+                        tempTotalDec1200 = tempTotalDec1200 + Convert.ToInt32(cell[4]);
+                        countTotalDec1200++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "13:00")
+                    {
+                        tempTotalDec1300 = tempTotalDec1300 + Convert.ToInt32(cell[4]);
+                        countTotalDec1300++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "14:00")
+                    {
+                        tempTotalDec1400 = tempTotalDec1400 + Convert.ToInt32(cell[4]);
+                        countTotalDec1400++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "15:00")
+                    {
+                        tempTotalDec1500 = tempTotalDec1500 + Convert.ToInt32(cell[4]);
+                        countTotalDec1500++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "16:00")
+                    {
+                        tempTotalDec1600 = tempTotalDec1600 + Convert.ToInt32(cell[4]);
+                        countTotalDec1600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "17:00")
+                    {
+                        tempTotalDec1700 = tempTotalDec1700 + Convert.ToInt32(cell[4]);
+                        countTotalDec1700++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "18:00")
+                    {
+                        tempTotalDec1800 = tempTotalDec1800 + Convert.ToInt32(cell[4]);
+                        countTotalDec1800++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "19:00")
+                    {
+                        tempTotalDec1900 = tempTotalDec1900 + Convert.ToInt32(cell[4]);
+                        countTotalDec1900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "12" && cell[1] == "20:00")
+                    {
+                        tempTotalDec2000 = tempTotalDec2000 + Convert.ToInt32(cell[4]);
+                        countTotalDec2000++;
+                    }
+                    #endregion
 
 
                 }
@@ -1287,6 +2082,8 @@ namespace Solar_Project_CSV_To_JSON_Console_App
              * Eventually, this is one area I will augment to migrate to a database.  If I want to hold all 70+ Colums
              * of data, I can omit most of this code and simply use the rows and cells loops above.  This will dramatically simplify the code
              * but it glances over the point of this exercise.
+             * 
+             * All output power ratings are in Watts/Square Meter
              */
 
             //Jan ToFile After Math
@@ -2500,8 +3297,888 @@ namespace Solar_Project_CSV_To_JSON_Console_App
 
             #endregion
 
+            //Aug ToFile After Math
+            #region
 
+            Console.WriteLine(Math.Floor(tempTotalAug0600) + " is the average for Aug @ 0600: ");
+            AverageAug0600 = tempTotalAug0600 / countTotalAug0600;
+
+            monthAverageAug += AverageAug0600;
+
+            sb.Append($"\"Aug0600\": {Math.Floor(AverageAug0600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug0700 = tempTotalAug0700 / countTotalAug0700;
+            Console.WriteLine(Math.Floor(AverageAug0700) + " is the average for Aug @ 0700");
+
+            monthAverageAug += AverageAug0700;
+            sb.Append($"\"Aug0700\": {Math.Floor(AverageAug0700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug0800 = tempTotalAug0800 / countTotalAug0800;
+            Console.WriteLine(Math.Floor(AverageAug0800) + " is the average for Aug @ 0800");
+
+
+            monthAverageAug += AverageAug0800;
+            sb.Append($"\"Aug0800\": {Math.Floor(AverageAug0800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug0900 = tempTotalAug0900 / countTotalAug0900;
+            Console.WriteLine(Math.Floor(AverageAug0900) + " is the average for Aug @ 0900");
+
+            monthAverageAug += AverageAug0900;
+            sb.Append($"\"Aug0900\": {Math.Floor(AverageAug0900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1000 = tempTotalAug1000 / countTotalAug1000;
+            Console.WriteLine(Math.Floor(AverageAug1000) + " is the average for Aug @ 1000");
+
+            monthAverageAug += AverageAug1000;
+            sb.Append($"\"Aug1000\": {Math.Floor(AverageAug1000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1100 = tempTotalAug1100 / countTotalAug1100;
+            Console.WriteLine(Math.Floor(AverageAug1100) + " is the average for Aug @ 1100");
+
+            monthAverageAug += AverageAug1100;
+            sb.Append($"\"Aug1100\": {Math.Floor(AverageAug1100)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1200 = tempTotalAug1200 / countTotalAug1200;
+            Console.WriteLine(Math.Floor(AverageAug1200) + " is the average for Aug @ 1200");
+
+            monthAverageAug += AverageAug1200;
+            sb.Append($"\"Aug1200\": {Math.Floor(AverageAug1200)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1300 = tempTotalAug1300 / countTotalAug1300;
+            Console.WriteLine(Math.Floor(AverageAug1300) + " is the average for Aug @ 1300");
+
+            monthAverageAug += AverageAug1300;
+            sb.Append($"\"Aug1300\": {Math.Floor(AverageAug1300)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1400 = tempTotalAug1400 / countTotalAug1400;
+            Console.WriteLine(Math.Floor(AverageAug1400) + " is the average for Aug @ 1400");
+
+            monthAverageAug += AverageAug1400;
+            sb.Append($"\"Aug1400\": {Math.Floor(AverageAug1400)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1500 = tempTotalAug1500 / countTotalAug1500;
+            Console.WriteLine(Math.Floor(AverageAug1500) + " is the average for Aug @ 1500");
+
+            monthAverageAug += AverageAug1500;
+            sb.Append($"\"Aug1500\": {Math.Floor(AverageAug1500)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1600 = tempTotalAug1600 / countTotalAug1600;
+            Console.WriteLine(Math.Floor(AverageAug1600) + " is the average for Aug @ 1600");
+
+            monthAverageAug += AverageAug1600;
+            sb.Append($"\"Aug1600\": {Math.Floor(AverageAug1600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1700 = tempTotalAug1700 / countTotalAug1700;
+            Console.WriteLine(Math.Floor(AverageAug1700) + " is the average for Aug @ 1700");
+            monthAverageAug += AverageAug1700;
+            sb.Append($"\"Aug1700\": {Math.Floor(AverageAug1700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1800 = tempTotalAug1800 / countTotalAug1800;
+            Console.WriteLine(Math.Floor(AverageAug1800) + " is the average for Aug @ 1800");
+            monthAverageAug += AverageAug1800;
+            sb.Append($"\"Aug1800\": {Math.Floor(AverageAug1800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug1900 = tempTotalAug1900 / countTotalAug1900;
+            Console.WriteLine(Math.Floor(AverageAug1900) + " is the average for Aug @ 1900");
+            monthAverageAug += AverageAug1900;
+            sb.Append($"\"Aug1900\": {Math.Floor(AverageAug1900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageAug2000 = tempTotalAug2000 / countTotalAug2000;
+            Console.WriteLine(Math.Floor(AverageAug2000) + " is the average for Aug @ 1700");
+            monthAverageAug += AverageAug2000;
+            sb.Append($"\"Aug2000\": {Math.Floor(AverageAug2000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            Console.WriteLine(Math.Floor(monthAverageAug) + " is the monthly average for Aug");
+            sb.Append($"\"AugAverage\": {Math.Floor(monthAverageAug)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+            #endregion
+
+            //Sep ToFile After Math
+            #region
+
+            Console.WriteLine(Math.Floor(tempTotalSep0600) + " is the average for Sep @ 0600: ");
+            AverageSep0600 = tempTotalSep0600 / countTotalSep0600;
+
+            monthAverageSep += AverageSep0600;
+
+            sb.Append($"\"Sep0600\": {Math.Floor(AverageSep0600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep0700 = tempTotalSep0700 / countTotalSep0700;
+            Console.WriteLine(Math.Floor(AverageSep0700) + " is the average for Sep @ 0700");
+
+            monthAverageSep += AverageSep0700;
+            sb.Append($"\"Sep0700\": {Math.Floor(AverageSep0700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep0800 = tempTotalSep0800 / countTotalSep0800;
+            Console.WriteLine(Math.Floor(AverageSep0800) + " is the average for Sep @ 0800");
+
+
+            monthAverageSep += AverageSep0800;
+            sb.Append($"\"Sep0800\": {Math.Floor(AverageSep0800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep0900 = tempTotalSep0900 / countTotalSep0900;
+            Console.WriteLine(Math.Floor(AverageSep0900) + " is the average for Sep @ 0900");
+
+            monthAverageSep += AverageSep0900;
+            sb.Append($"\"Sep0900\": {Math.Floor(AverageSep0900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1000 = tempTotalSep1000 / countTotalSep1000;
+            Console.WriteLine(Math.Floor(AverageSep1000) + " is the average for Sep @ 1000");
+
+            monthAverageSep += AverageSep1000;
+            sb.Append($"\"Sep1000\": {Math.Floor(AverageSep1000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1100 = tempTotalSep1100 / countTotalSep1100;
+            Console.WriteLine(Math.Floor(AverageSep1100) + " is the average for Sep @ 1100");
+
+            monthAverageSep += AverageSep1100;
+            sb.Append($"\"Sep1100\": {Math.Floor(AverageSep1100)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1200 = tempTotalSep1200 / countTotalSep1200;
+            Console.WriteLine(Math.Floor(AverageSep1200) + " is the average for Sep @ 1200");
+
+            monthAverageSep += AverageSep1200;
+            sb.Append($"\"Sep1200\": {Math.Floor(AverageSep1200)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1300 = tempTotalSep1300 / countTotalSep1300;
+            Console.WriteLine(Math.Floor(AverageSep1300) + " is the average for Sep @ 1300");
+
+            monthAverageSep += AverageSep1300;
+            sb.Append($"\"Sep1300\": {Math.Floor(AverageSep1300)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1400 = tempTotalSep1400 / countTotalSep1400;
+            Console.WriteLine(Math.Floor(AverageSep1400) + " is the average for Sep @ 1400");
+
+            monthAverageSep += AverageSep1400;
+            sb.Append($"\"Sep1400\": {Math.Floor(AverageSep1400)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1500 = tempTotalSep1500 / countTotalSep1500;
+            Console.WriteLine(Math.Floor(AverageSep1500) + " is the average for Sep @ 1500");
+
+            monthAverageSep += AverageSep1500;
+            sb.Append($"\"Sep1500\": {Math.Floor(AverageSep1500)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1600 = tempTotalSep1600 / countTotalSep1600;
+            Console.WriteLine(Math.Floor(AverageSep1600) + " is the average for Sep @ 1600");
+
+            monthAverageSep += AverageSep1600;
+            sb.Append($"\"Sep1600\": {Math.Floor(AverageSep1600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1700 = tempTotalSep1700 / countTotalSep1700;
+            Console.WriteLine(Math.Floor(AverageSep1700) + " is the average for Sep @ 1700");
+            monthAverageSep += AverageSep1700;
+            sb.Append($"\"Sep1700\": {Math.Floor(AverageSep1700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1800 = tempTotalSep1800 / countTotalSep1800;
+            Console.WriteLine(Math.Floor(AverageSep1800) + " is the average for Sep @ 1800");
+            monthAverageSep += AverageSep1800;
+            sb.Append($"\"Sep1800\": {Math.Floor(AverageSep1800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep1900 = tempTotalSep1900 / countTotalSep1900;
+            Console.WriteLine(Math.Floor(AverageSep1900) + " is the average for Sep @ 1900");
+            monthAverageSep += AverageSep1900;
+            sb.Append($"\"Sep1900\": {Math.Floor(AverageSep1900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageSep2000 = tempTotalSep2000 / countTotalSep2000;
+            Console.WriteLine(Math.Floor(AverageSep2000) + " is the average for Sep @ 1700");
+            monthAverageSep += AverageSep2000;
+            sb.Append($"\"Sep2000\": {Math.Floor(AverageSep2000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            Console.WriteLine(Math.Floor(monthAverageSep) + " is the monthly average for Sep");
+            sb.Append($"\"SepAverage\": {Math.Floor(monthAverageSep)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+            #endregion
+
+            //Oct ToFile After Math
+            #region
+
+            Console.WriteLine(Math.Floor(tempTotalOct0600) + " is the average for Oct @ 0600: ");
+            AverageOct0600 = tempTotalOct0600 / countTotalOct0600;
+
+            monthAverageOct += AverageOct0600;
+
+            sb.Append($"\"Oct0600\": {Math.Floor(AverageOct0600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct0700 = tempTotalOct0700 / countTotalOct0700;
+            Console.WriteLine(Math.Floor(AverageOct0700) + " is the average for Oct @ 0700");
+
+            monthAverageOct += AverageOct0700;
+            sb.Append($"\"Oct0700\": {Math.Floor(AverageOct0700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct0800 = tempTotalOct0800 / countTotalOct0800;
+            Console.WriteLine(Math.Floor(AverageOct0800) + " is the average for Oct @ 0800");
+
+
+            monthAverageOct += AverageOct0800;
+            sb.Append($"\"Oct0800\": {Math.Floor(AverageOct0800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct0900 = tempTotalOct0900 / countTotalOct0900;
+            Console.WriteLine(Math.Floor(AverageOct0900) + " is the average for Oct @ 0900");
+
+            monthAverageOct += AverageOct0900;
+            sb.Append($"\"Oct0900\": {Math.Floor(AverageOct0900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1000 = tempTotalOct1000 / countTotalOct1000;
+            Console.WriteLine(Math.Floor(AverageOct1000) + " is the average for Oct @ 1000");
+
+            monthAverageOct += AverageOct1000;
+            sb.Append($"\"Oct1000\": {Math.Floor(AverageOct1000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1100 = tempTotalOct1100 / countTotalOct1100;
+            Console.WriteLine(Math.Floor(AverageOct1100) + " is the average for Oct @ 1100");
+
+            monthAverageOct += AverageOct1100;
+            sb.Append($"\"Oct1100\": {Math.Floor(AverageOct1100)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1200 = tempTotalOct1200 / countTotalOct1200;
+            Console.WriteLine(Math.Floor(AverageOct1200) + " is the average for Oct @ 1200");
+
+            monthAverageOct += AverageOct1200;
+            sb.Append($"\"Oct1200\": {Math.Floor(AverageOct1200)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1300 = tempTotalOct1300 / countTotalOct1300;
+            Console.WriteLine(Math.Floor(AverageOct1300) + " is the average for Oct @ 1300");
+
+            monthAverageOct += AverageOct1300;
+            sb.Append($"\"Oct1300\": {Math.Floor(AverageOct1300)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1400 = tempTotalOct1400 / countTotalOct1400;
+            Console.WriteLine(Math.Floor(AverageOct1400) + " is the average for Oct @ 1400");
+
+            monthAverageOct += AverageOct1400;
+            sb.Append($"\"Oct1400\": {Math.Floor(AverageOct1400)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1500 = tempTotalOct1500 / countTotalOct1500;
+            Console.WriteLine(Math.Floor(AverageOct1500) + " is the average for Oct @ 1500");
+
+            monthAverageOct += AverageOct1500;
+            sb.Append($"\"Oct1500\": {Math.Floor(AverageOct1500)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1600 = tempTotalOct1600 / countTotalOct1600;
+            Console.WriteLine(Math.Floor(AverageOct1600) + " is the average for Oct @ 1600");
+
+            monthAverageOct += AverageOct1600;
+            sb.Append($"\"Oct1600\": {Math.Floor(AverageOct1600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1700 = tempTotalOct1700 / countTotalOct1700;
+            Console.WriteLine(Math.Floor(AverageOct1700) + " is the average for Oct @ 1700");
+            monthAverageOct += AverageOct1700;
+            sb.Append($"\"Oct1700\": {Math.Floor(AverageOct1700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1800 = tempTotalOct1800 / countTotalOct1800;
+            Console.WriteLine(Math.Floor(AverageOct1800) + " is the average for Oct @ 1800");
+            monthAverageOct += AverageOct1800;
+            sb.Append($"\"Oct1800\": {Math.Floor(AverageOct1800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct1900 = tempTotalOct1900 / countTotalOct1900;
+            Console.WriteLine(Math.Floor(AverageOct1900) + " is the average for Oct @ 1900");
+            monthAverageOct += AverageOct1900;
+            sb.Append($"\"Oct1900\": {Math.Floor(AverageOct1900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageOct2000 = tempTotalOct2000 / countTotalOct2000;
+            Console.WriteLine(Math.Floor(AverageOct2000) + " is the average for Oct @ 1700");
+            monthAverageOct += AverageOct2000;
+            sb.Append($"\"Oct2000\": {Math.Floor(AverageOct2000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            Console.WriteLine(Math.Floor(monthAverageOct) + " is the monthly average for Oct");
+            sb.Append($"\"OctAverage\": {Math.Floor(monthAverageOct)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+            #endregion
+
+            //Nov ToFile After Math
+            #region
+
+            Console.WriteLine(Math.Floor(tempTotalNov0600) + " is the average for Nov @ 0600: ");
+            AverageNov0600 = tempTotalNov0600 / countTotalNov0600;
+
+            monthAverageNov += AverageNov0600;
+
+            sb.Append($"\"Nov0600\": {Math.Floor(AverageNov0600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov0700 = tempTotalNov0700 / countTotalNov0700;
+            Console.WriteLine(Math.Floor(AverageNov0700) + " is the average for Nov @ 0700");
+
+            monthAverageNov += AverageNov0700;
+            sb.Append($"\"Nov0700\": {Math.Floor(AverageNov0700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov0800 = tempTotalNov0800 / countTotalNov0800;
+            Console.WriteLine(Math.Floor(AverageNov0800) + " is the average for Nov @ 0800");
+
+
+            monthAverageNov += AverageNov0800;
+            sb.Append($"\"Nov0800\": {Math.Floor(AverageNov0800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov0900 = tempTotalNov0900 / countTotalNov0900;
+            Console.WriteLine(Math.Floor(AverageNov0900) + " is the average for Nov @ 0900");
+
+            monthAverageNov += AverageNov0900;
+            sb.Append($"\"Nov0900\": {Math.Floor(AverageNov0900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1000 = tempTotalNov1000 / countTotalNov1000;
+            Console.WriteLine(Math.Floor(AverageNov1000) + " is the average for Nov @ 1000");
+
+            monthAverageNov += AverageNov1000;
+            sb.Append($"\"Nov1000\": {Math.Floor(AverageNov1000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1100 = tempTotalNov1100 / countTotalNov1100;
+            Console.WriteLine(Math.Floor(AverageNov1100) + " is the average for Nov @ 1100");
+
+            monthAverageNov += AverageNov1100;
+            sb.Append($"\"Nov1100\": {Math.Floor(AverageNov1100)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1200 = tempTotalNov1200 / countTotalNov1200;
+            Console.WriteLine(Math.Floor(AverageNov1200) + " is the average for Nov @ 1200");
+
+            monthAverageNov += AverageNov1200;
+            sb.Append($"\"Nov1200\": {Math.Floor(AverageNov1200)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1300 = tempTotalNov1300 / countTotalNov1300;
+            Console.WriteLine(Math.Floor(AverageNov1300) + " is the average for Nov @ 1300");
+
+            monthAverageNov += AverageNov1300;
+            sb.Append($"\"Nov1300\": {Math.Floor(AverageNov1300)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1400 = tempTotalNov1400 / countTotalNov1400;
+            Console.WriteLine(Math.Floor(AverageNov1400) + " is the average for Nov @ 1400");
+
+            monthAverageNov += AverageNov1400;
+            sb.Append($"\"Nov1400\": {Math.Floor(AverageNov1400)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1500 = tempTotalNov1500 / countTotalNov1500;
+            Console.WriteLine(Math.Floor(AverageNov1500) + " is the average for Nov @ 1500");
+
+            monthAverageNov += AverageNov1500;
+            sb.Append($"\"Nov1500\": {Math.Floor(AverageNov1500)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1600 = tempTotalNov1600 / countTotalNov1600;
+            Console.WriteLine(Math.Floor(AverageNov1600) + " is the average for Nov @ 1600");
+
+            monthAverageNov += AverageNov1600;
+            sb.Append($"\"Nov1600\": {Math.Floor(AverageNov1600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1700 = tempTotalNov1700 / countTotalNov1700;
+            Console.WriteLine(Math.Floor(AverageNov1700) + " is the average for Nov @ 1700");
+            monthAverageNov += AverageNov1700;
+            sb.Append($"\"Nov1700\": {Math.Floor(AverageNov1700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1800 = tempTotalNov1800 / countTotalNov1800;
+            Console.WriteLine(Math.Floor(AverageNov1800) + " is the average for Nov @ 1800");
+            monthAverageNov += AverageNov1800;
+            sb.Append($"\"Nov1800\": {Math.Floor(AverageNov1800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov1900 = tempTotalNov1900 / countTotalNov1900;
+            Console.WriteLine(Math.Floor(AverageNov1900) + " is the average for Nov @ 1900");
+            monthAverageNov += AverageNov1900;
+            sb.Append($"\"Nov1900\": {Math.Floor(AverageNov1900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageNov2000 = tempTotalNov2000 / countTotalNov2000;
+            Console.WriteLine(Math.Floor(AverageNov2000) + " is the average for Nov @ 1700");
+            monthAverageNov += AverageNov2000;
+            sb.Append($"\"Nov2000\": {Math.Floor(AverageNov2000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            Console.WriteLine(Math.Floor(monthAverageNov) + " is the monthly average for Nov");
+            sb.Append($"\"NovAverage\": {Math.Floor(monthAverageNov)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+            #endregion
+
+            //Dec ToFile After Math
+            #region
+
+            Console.WriteLine(Math.Floor(tempTotalDec0600) + " is the average for Dec @ 0600: ");
+            AverageDec0600 = tempTotalDec0600 / countTotalDec0600;
+
+            monthAverageDec += AverageDec0600;
+
+            sb.Append($"\"Dec0600\": {Math.Floor(AverageDec0600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec0700 = tempTotalDec0700 / countTotalDec0700;
+            Console.WriteLine(Math.Floor(AverageDec0700) + " is the average for Dec @ 0700");
+
+            monthAverageDec += AverageDec0700;
+            sb.Append($"\"Dec0700\": {Math.Floor(AverageDec0700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec0800 = tempTotalDec0800 / countTotalDec0800;
+            Console.WriteLine(Math.Floor(AverageDec0800) + " is the average for Dec @ 0800");
+
+
+            monthAverageDec += AverageDec0800;
+            sb.Append($"\"Dec0800\": {Math.Floor(AverageDec0800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec0900 = tempTotalDec0900 / countTotalDec0900;
+            Console.WriteLine(Math.Floor(AverageDec0900) + " is the average for Dec @ 0900");
+
+            monthAverageDec += AverageDec0900;
+            sb.Append($"\"Dec0900\": {Math.Floor(AverageDec0900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1000 = tempTotalDec1000 / countTotalDec1000;
+            Console.WriteLine(Math.Floor(AverageDec1000) + " is the average for Dec @ 1000");
+
+            monthAverageDec += AverageDec1000;
+            sb.Append($"\"Dec1000\": {Math.Floor(AverageDec1000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1100 = tempTotalDec1100 / countTotalDec1100;
+            Console.WriteLine(Math.Floor(AverageDec1100) + " is the average for Dec @ 1100");
+
+            monthAverageDec += AverageDec1100;
+            sb.Append($"\"Dec1100\": {Math.Floor(AverageDec1100)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1200 = tempTotalDec1200 / countTotalDec1200;
+            Console.WriteLine(Math.Floor(AverageDec1200) + " is the average for Dec @ 1200");
+
+            monthAverageDec += AverageDec1200;
+            sb.Append($"\"Dec1200\": {Math.Floor(AverageDec1200)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1300 = tempTotalDec1300 / countTotalDec1300;
+            Console.WriteLine(Math.Floor(AverageDec1300) + " is the average for Dec @ 1300");
+
+            monthAverageDec += AverageDec1300;
+            sb.Append($"\"Dec1300\": {Math.Floor(AverageDec1300)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1400 = tempTotalDec1400 / countTotalDec1400;
+            Console.WriteLine(Math.Floor(AverageDec1400) + " is the average for Dec @ 1400");
+
+            monthAverageDec += AverageDec1400;
+            sb.Append($"\"Dec1400\": {Math.Floor(AverageDec1400)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1500 = tempTotalDec1500 / countTotalDec1500;
+            Console.WriteLine(Math.Floor(AverageDec1500) + " is the average for Dec @ 1500");
+
+            monthAverageDec += AverageDec1500;
+            sb.Append($"\"Dec1500\": {Math.Floor(AverageDec1500)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1600 = tempTotalDec1600 / countTotalDec1600;
+            Console.WriteLine(Math.Floor(AverageDec1600) + " is the average for Dec @ 1600");
+
+            monthAverageDec += AverageDec1600;
+            sb.Append($"\"Dec1600\": {Math.Floor(AverageDec1600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1700 = tempTotalDec1700 / countTotalDec1700;
+            Console.WriteLine(Math.Floor(AverageDec1700) + " is the average for Dec @ 1700");
+            monthAverageDec += AverageDec1700;
+            sb.Append($"\"Dec1700\": {Math.Floor(AverageDec1700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1800 = tempTotalDec1800 / countTotalDec1800;
+            Console.WriteLine(Math.Floor(AverageDec1800) + " is the average for Dec @ 1800");
+            monthAverageDec += AverageDec1800;
+            sb.Append($"\"Dec1800\": {Math.Floor(AverageDec1800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec1900 = tempTotalDec1900 / countTotalDec1900;
+            Console.WriteLine(Math.Floor(AverageDec1900) + " is the average for Dec @ 1900");
+            monthAverageDec += AverageDec1900;
+            sb.Append($"\"Dec1900\": {Math.Floor(AverageDec1900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageDec2000 = tempTotalDec2000 / countTotalDec2000;
+            Console.WriteLine(Math.Floor(AverageDec2000) + " is the average for Dec @ 1700");
+            monthAverageDec += AverageDec2000;
+            sb.Append($"\"Dec2000\": {Math.Floor(AverageDec2000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            Console.WriteLine(Math.Floor(monthAverageDec) + " is the monthly average for Dec");
+            sb.Append($"\"DecAverage\": {Math.Floor(monthAverageDec)}");
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+
+            //Closing marks for JSON format.
+            sb.Append("},");
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+            #endregion
 
         }
+
     }
 }
