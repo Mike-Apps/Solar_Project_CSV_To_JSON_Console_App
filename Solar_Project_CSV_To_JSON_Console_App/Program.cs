@@ -27,9 +27,8 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             * Which is why this whole program is in one main class, for ease of replication.Next project will be to clean up and minimize the repeated code. 
             */
 
-
             //January Averages 
-        #region
+            #region
             decimal monthAverageJan = 0;
 
             decimal tempTotalJan0600 = 0;
@@ -816,7 +815,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             string path = file;
             string targetPath = "C:\\CSV_Read_Project\\temp\\SolarData.txt";
 
-
             Stream myfile;
             if (!File.Exists(targetPath))
             {
@@ -828,7 +826,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             File.AppendAllText(targetPath, sb.ToString());
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
-
 
             string[] row = File.ReadAllLines(path);
 
@@ -853,7 +850,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                         File.AppendAllText(targetPath, Environment.NewLine);
                         sb.Clear();
                         count++;
-
                     }
 
                     if (i == 0 && count == 1)
@@ -886,9 +882,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     sb.Clear();
                     count = 0;
                 }
-                //myfile.Close();
-                //sb.Clear();
-                //count = 0;
 
                 try
                 {
