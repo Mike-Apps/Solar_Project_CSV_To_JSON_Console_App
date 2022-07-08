@@ -17,11 +17,19 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                 ExtractData(file);
             }
         }
-        //Continue to add and test regions.  Each region needs to have month string and month number changed in order to work.  So far this is working...........
+        
         public static void ExtractData(string file)
         {
+           /* Variable declaration starts here.  Each month has an hourly breakdown.  CSV file I am extracting data from contains around 71 Columns and > 8k Rows per file
+            * There are > 2K CSV files in this format that need to be itterated through.
+            * Goal here is to identify the hourly averages for each location (each CSV file is a location) over a 20 year span.Right now, this information
+            * is getting stored in a JSON file and will have a class model that matches the JSON template.Next project will be to output this information to a database.
+            * Which is why this whole program is in one main class, for ease of replication.Next project will be to clean up and minimize the repeated code. 
+            */
+
+
             //January Averages 
-            #region
+        #region
             decimal monthAverageJan = 0;
 
             decimal tempTotalJan0600 = 0;
@@ -346,6 +354,139 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             #endregion
 
 
+            //Jun Averages
+            #region
+            decimal monthAverageJun = 0;
+
+            decimal tempTotalJun0600 = 0;
+            decimal countTotalJun0600 = 0;
+            decimal AverageJun0600 = 0;
+
+            decimal tempTotalJun0700 = 0;
+            decimal countTotalJun0700 = 0;
+            decimal AverageJun0700 = 0;
+
+            decimal tempTotalJun0800 = 0;
+            decimal countTotalJun0800 = 0;
+            decimal AverageJun0800 = 0;
+
+            decimal tempTotalJun0900 = 0;
+            decimal countTotalJun0900 = 0;
+            decimal AverageJun0900 = 0;
+
+            decimal tempTotalJun1000 = 0;
+            decimal countTotalJun1000 = 0;
+            decimal AverageJun1000 = 0;
+
+            decimal tempTotalJun1100 = 0;
+            decimal countTotalJun1100 = 0;
+            decimal AverageJun1100 = 0;
+
+            decimal tempTotalJun1200 = 0;
+            decimal countTotalJun1200 = 0;
+            decimal AverageJun1200 = 0;
+
+            decimal tempTotalJun1300 = 0;
+            decimal countTotalJun1300 = 0;
+            decimal AverageJun1300 = 0;
+
+            decimal tempTotalJun1400 = 0;
+            decimal countTotalJun1400 = 0;
+            decimal AverageJun1400 = 0;
+
+            decimal tempTotalJun1500 = 0;
+            decimal countTotalJun1500 = 0;
+            decimal AverageJun1500 = 0;
+
+            decimal tempTotalJun1600 = 0;
+            decimal countTotalJun1600 = 0;
+            decimal AverageJun1600 = 0;
+
+            decimal tempTotalJun1700 = 0;
+            decimal countTotalJun1700 = 0;
+            decimal AverageJun1700 = 0;
+
+            decimal tempTotalJun1800 = 0;
+            decimal countTotalJun1800 = 0;
+            decimal AverageJun1800 = 0;
+
+            decimal tempTotalJun1900 = 0;
+            decimal countTotalJun1900 = 0;
+            decimal AverageJun1900 = 0;
+
+            decimal tempTotalJun2000 = 0;
+            decimal countTotalJun2000 = 0;
+            decimal AverageJun2000 = 0;
+            #endregion
+
+            //Jul Averages
+            #region
+            decimal monthAverageJul = 0;
+
+            decimal tempTotalJul0600 = 0;
+            decimal countTotalJul0600 = 0;
+            decimal AverageJul0600 = 0;
+
+            decimal tempTotalJul0700 = 0;
+            decimal countTotalJul0700 = 0;
+            decimal AverageJul0700 = 0;
+
+            decimal tempTotalJul0800 = 0;
+            decimal countTotalJul0800 = 0;
+            decimal AverageJul0800 = 0;
+
+            decimal tempTotalJul0900 = 0;
+            decimal countTotalJul0900 = 0;
+            decimal AverageJul0900 = 0;
+
+            decimal tempTotalJul1000 = 0;
+            decimal countTotalJul1000 = 0;
+            decimal AverageJul1000 = 0;
+
+            decimal tempTotalJul1100 = 0;
+            decimal countTotalJul1100 = 0;
+            decimal AverageJul1100 = 0;
+
+            decimal tempTotalJul1200 = 0;
+            decimal countTotalJul1200 = 0;
+            decimal AverageJul1200 = 0;
+
+            decimal tempTotalJul1300 = 0;
+            decimal countTotalJul1300 = 0;
+            decimal AverageJul1300 = 0;
+
+            decimal tempTotalJul1400 = 0;
+            decimal countTotalJul1400 = 0;
+            decimal AverageJul1400 = 0;
+
+            decimal tempTotalJul1500 = 0;
+            decimal countTotalJul1500 = 0;
+            decimal AverageJul1500 = 0;
+
+            decimal tempTotalJul1600 = 0;
+            decimal countTotalJul1600 = 0;
+            decimal AverageJul1600 = 0;
+
+            decimal tempTotalJul1700 = 0;
+            decimal countTotalJul1700 = 0;
+            decimal AverageJul1700 = 0;
+
+            decimal tempTotalJul1800 = 0;
+            decimal countTotalJul1800 = 0;
+            decimal AverageJul1800 = 0;
+
+            decimal tempTotalJul1900 = 0;
+            decimal countTotalJul1900 = 0;
+            decimal AverageJul1900 = 0;
+
+            decimal tempTotalJul2000 = 0;
+            decimal countTotalJul2000 = 0;
+            decimal AverageJul2000 = 0;
+            #endregion
+
+
+
+
 
             //file is the full path of the directory.  
             //targePath is the name of the file, it will create a new file with the information from the parent extracted.
@@ -371,13 +512,12 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             for (int i = 0; i < row.Length; i++)
             {
                 //FIRST LOOP CREATES A LITTERAL STRING WITH SEPERATORS.  ONE STRING PER LINE.  SECOND STRING ARRAY "ROWS" SPLITS THE STRING INTO ITS INDIVIDUAL CELLS.  
-                //NEED TO ADD THE ',' BACK INTO THE MIX ONCE RE-ADDED INTO THE TARGET CSV FILE.
 
                 string[] cell = row[i].Split(',');
 
                 for (int j = 0; j < cell.Length; j++)
                 {
-                    //Data to JSON that does not require Math
+                    //Data to JSON that does not require Math.  This is all my header data from each file.  City, state, Lat/Long.
                     
                     if (i == 0 && count == 0)
                     {
@@ -395,7 +535,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
 
                         sb.Append($"\"City\": {cell[1]}" + ',');
                         File.AppendAllText(targetPath, sb.ToString());
-                        //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
                         File.AppendAllText(targetPath, Environment.NewLine);
                         sb.Clear();
 
@@ -427,6 +566,10 @@ namespace Solar_Project_CSV_To_JSON_Console_App
 
                 try
                 {
+                    /* this is where my math takes place.  First storing the month and time data into its respective variable.  Then calculating the average
+                     * of that month/hour combo and storing it in the respective totals above.
+                     * */
+
                     //January Averages over the hours.
                     #region
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "01" && cell[1] == "06:00")
@@ -558,96 +701,72 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalFeb0600 = tempTotalFeb0600 + Convert.ToInt32(cell[4]);
                         countTotalFeb0600++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalFeb0600);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "07:00")
                     {
                         tempTotalFeb0700 = tempTotalFeb0700 + Convert.ToInt32(cell[4]);
                         countTotalFeb0700++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalFeb0700);
                     }
 
-                    if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "08:00")
+                    if  (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "08:00")
                     {
                         tempTotalFeb0800 = tempTotalFeb0800 + Convert.ToInt32(cell[4]);
                         countTotalFeb0800++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalFeb0800);
                     }
 
-                    if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "09:00")
+                        if(cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "09:00")
                     {
                         tempTotalFeb0900 = tempTotalFeb0900 + Convert.ToInt32(cell[4]);
                         countTotalFeb0900++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalFeb0900);
                     }
 
-                    if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "10:00")
+                   if  (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "10:00")
                     {
                         tempTotalFeb1000 = tempTotalFeb1000 + Convert.ToInt32(cell[4]);
                         countTotalFeb1000++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalFeb1000);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "11:00")
                     {
                         tempTotalFeb1100 = tempTotalFeb1100 + Convert.ToInt32(cell[4]);
                         countTotalFeb1100++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb1100);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "12:00")
                     {
                         tempTotalFeb1200 = tempTotalFeb1200 + Convert.ToInt32(cell[4]);
                         countTotalFeb1200++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb1200);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "13:00")
                     {
                         tempTotalFeb1300 = tempTotalFeb1300 + Convert.ToInt32(cell[4]);
                         countTotalFeb1300++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalFeb1300);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "14:00")
                     {
                         tempTotalFeb1400 = tempTotalFeb1400 + Convert.ToInt32(cell[4]);
                         countTotalFeb1400++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb1400);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "15:00")
                     {
                         tempTotalFeb1500 = tempTotalFeb1500 + Convert.ToInt32(cell[4]);
                         countTotalFeb1500++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalFeb1500);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "16:00")
                     {
                         tempTotalFeb1600 = tempTotalFeb1600 + Convert.ToInt32(cell[4]);
                         countTotalFeb1600++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb1600);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "17:00")
                     {
                         tempTotalFeb1700 = tempTotalFeb1700 + Convert.ToInt32(cell[4]);
                         countTotalFeb1700++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb1700);
                     }
 
 
@@ -655,8 +774,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalFeb1800 = tempTotalFeb1800 + Convert.ToInt32(cell[4]);
                         countTotalFeb1800++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb1800);
                     }
 
 
@@ -664,16 +781,12 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalFeb1900 = tempTotalFeb1900 + Convert.ToInt32(cell[4]);
                         countTotalFeb1900++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb1900);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "02" && cell[1] == "20:00")
                     {
                         tempTotalFeb2000 = tempTotalFeb2000 + Convert.ToInt32(cell[4]);
                         countTotalFeb2000++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalFeb2000);
                     }
                     #endregion
 
@@ -684,105 +797,78 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalMar0600 = tempTotalMar0600 + Convert.ToInt32(cell[4]);
                         countTotalMar0600++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMar0600);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "07:00")
                     {
                         tempTotalMar0700 = tempTotalMar0700 + Convert.ToInt32(cell[4]);
                         countTotalMar0700++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMar0700);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "08:00")
                     {
                         tempTotalMar0800 = tempTotalMar0800 + Convert.ToInt32(cell[4]);
                         countTotalMar0800++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMar0800);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "09:00")
                     {
                         tempTotalMar0900 = tempTotalMar0900 + Convert.ToInt32(cell[4]);
                         countTotalMar0900++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMar0900);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "10:00")
                     {
                         tempTotalMar1000 = tempTotalMar1000 + Convert.ToInt32(cell[4]);
                         countTotalMar1000++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMar1000);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "11:00")
                     {
                         tempTotalMar1100 = tempTotalMar1100 + Convert.ToInt32(cell[4]);
                         countTotalMar1100++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar1100);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "12:00")
                     {
                         tempTotalMar1200 = tempTotalMar1200 + Convert.ToInt32(cell[4]);
                         countTotalMar1200++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar1200);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "13:00")
                     {
                         tempTotalMar1300 = tempTotalMar1300 + Convert.ToInt32(cell[4]);
                         countTotalMar1300++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMar1300);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "14:00")
                     {
                         tempTotalMar1400 = tempTotalMar1400 + Convert.ToInt32(cell[4]);
                         countTotalMar1400++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar1400);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "15:00")
                     {
                         tempTotalMar1500 = tempTotalMar1500 + Convert.ToInt32(cell[4]);
                         countTotalMar1500++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMar1500);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "16:00")
                     {
                         tempTotalMar1600 = tempTotalMar1600 + Convert.ToInt32(cell[4]);
                         countTotalMar1600++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar1600);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "17:00")
                     {
                         tempTotalMar1700 = tempTotalMar1700 + Convert.ToInt32(cell[4]);
                         countTotalMar1700++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar1700);
                     }
-
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "18:00")
                     {
                         tempTotalMar1800 = tempTotalMar1800 + Convert.ToInt32(cell[4]);
                         countTotalMar1800++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar1800);
                     }
 
 
@@ -790,16 +876,12 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalMar1900 = tempTotalMar1900 + Convert.ToInt32(cell[4]);
                         countTotalMar1900++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar1900);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "03" && cell[1] == "20:00")
                     {
                         tempTotalMar2000 = tempTotalMar2000 + Convert.ToInt32(cell[4]);
                         countTotalMar2000++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMar2000);
                     }
                     #endregion
 
@@ -818,88 +900,66 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalApr0700 = tempTotalApr0700 + Convert.ToInt32(cell[4]);
                         countTotalApr0700++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalApr0700);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "08:00")
                     {
                         tempTotalApr0800 = tempTotalApr0800 + Convert.ToInt32(cell[4]);
                         countTotalApr0800++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalApr0800);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "09:00")
                     {
                         tempTotalApr0900 = tempTotalApr0900 + Convert.ToInt32(cell[4]);
                         countTotalApr0900++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalApr0900);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "10:00")
                     {
                         tempTotalApr1000 = tempTotalApr1000 + Convert.ToInt32(cell[4]);
                         countTotalApr1000++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalApr1000);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "11:00")
                     {
                         tempTotalApr1100 = tempTotalApr1100 + Convert.ToInt32(cell[4]);
                         countTotalApr1100++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr1100);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "12:00")
                     {
                         tempTotalApr1200 = tempTotalApr1200 + Convert.ToInt32(cell[4]);
                         countTotalApr1200++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr1200);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "13:00")
                     {
                         tempTotalApr1300 = tempTotalApr1300 + Convert.ToInt32(cell[4]);
                         countTotalApr1300++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalApr1300);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "14:00")
                     {
                         tempTotalApr1400 = tempTotalApr1400 + Convert.ToInt32(cell[4]);
                         countTotalApr1400++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr1400);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "15:00")
                     {
                         tempTotalApr1500 = tempTotalApr1500 + Convert.ToInt32(cell[4]);
                         countTotalApr1500++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalApr1500);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "16:00")
                     {
                         tempTotalApr1600 = tempTotalApr1600 + Convert.ToInt32(cell[4]);
                         countTotalApr1600++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr1600);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "17:00")
                     {
                         tempTotalApr1700 = tempTotalApr1700 + Convert.ToInt32(cell[4]);
                         countTotalApr1700++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr1700);
                     }
 
 
@@ -907,8 +967,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalApr1800 = tempTotalApr1800 + Convert.ToInt32(cell[4]);
                         countTotalApr1800++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr1800);
                     }
 
 
@@ -916,16 +974,12 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalApr1900 = tempTotalApr1900 + Convert.ToInt32(cell[4]);
                         countTotalApr1900++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr1900);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "04" && cell[1] == "20:00")
                     {
                         tempTotalApr2000 = tempTotalApr2000 + Convert.ToInt32(cell[4]);
                         countTotalApr2000++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalApr2000);
                     }
                     #endregion
 
@@ -936,96 +990,71 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalMay0600 = tempTotalMay0600 + Convert.ToInt32(cell[4]);
                         countTotalMay0600++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMay0600);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "07:00")
                     {
                         tempTotalMay0700 = tempTotalMay0700 + Convert.ToInt32(cell[4]);
                         countTotalMay0700++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMay0700);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "08:00")
                     {
                         tempTotalMay0800 = tempTotalMay0800 + Convert.ToInt32(cell[4]);
                         countTotalMay0800++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMay0800);
                     }
-
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "09:00")
                     {
                         tempTotalMay0900 = tempTotalMay0900 + Convert.ToInt32(cell[4]);
                         countTotalMay0900++;
-                        // Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMay0900);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "10:00")
                     {
                         tempTotalMay1000 = tempTotalMay1000 + Convert.ToInt32(cell[4]);
                         countTotalMay1000++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMay1000);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "11:00")
                     {
                         tempTotalMay1100 = tempTotalMay1100 + Convert.ToInt32(cell[4]);
                         countTotalMay1100++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay1100);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "12:00")
                     {
                         tempTotalMay1200 = tempTotalMay1200 + Convert.ToInt32(cell[4]);
                         countTotalMay1200++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay1200);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "13:00")
                     {
                         tempTotalMay1300 = tempTotalMay1300 + Convert.ToInt32(cell[4]);
                         countTotalMay1300++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMay1300);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "14:00")
                     {
                         tempTotalMay1400 = tempTotalMay1400 + Convert.ToInt32(cell[4]);
                         countTotalMay1400++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay1400);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "15:00")
                     {
                         tempTotalMay1500 = tempTotalMay1500 + Convert.ToInt32(cell[4]);
                         countTotalMay1500++;
-                        //Console.WriteLine(cell[0]);
-                        //Console.WriteLine(tempTotalMay1500);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "16:00")
                     {
                         tempTotalMay1600 = tempTotalMay1600 + Convert.ToInt32(cell[4]);
                         countTotalMay1600++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay1600);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "17:00")
                     {
                         tempTotalMay1700 = tempTotalMay1700 + Convert.ToInt32(cell[4]);
                         countTotalMay1700++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay1700);
                     }
 
 
@@ -1033,8 +1062,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalMay1800 = tempTotalMay1800 + Convert.ToInt32(cell[4]);
                         countTotalMay1800++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay1800);
                     }
 
 
@@ -1042,18 +1069,209 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                     {
                         tempTotalMay1900 = tempTotalMay1900 + Convert.ToInt32(cell[4]);
                         countTotalMay1900++;
-                        //Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay1900);
                     }
 
                     if (cell[0][0].ToString() + cell[0][1].ToString() == "05" && cell[1] == "20:00")
                     {
                         tempTotalMay2000 = tempTotalMay2000 + Convert.ToInt32(cell[4]);
                         countTotalMay2000++;
-                        // Console.WriteLine(cell[0]);
-                        // Console.WriteLine(tempTotalMay2000);
                     }
                     #endregion
+
+                    //Jun Averages over the hours
+                    #region
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "06:00")
+                    {
+                        tempTotalJun0600 = tempTotalJun0600 + Convert.ToInt32(cell[4]);
+                        countTotalJun0600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "07:00")
+                    {
+                        tempTotalJun0700 = tempTotalJun0700 + Convert.ToInt32(cell[4]);
+                        countTotalJun0700++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "08:00")
+                    {
+                        tempTotalJun0800 = tempTotalJun0800 + Convert.ToInt32(cell[4]);
+                        countTotalJun0800++;
+                    }
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "09:00")
+                    {
+                        tempTotalJun0900 = tempTotalJun0900 + Convert.ToInt32(cell[4]);
+                        countTotalJun0900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "10:00")
+                    {
+                        tempTotalJun1000 = tempTotalJun1000 + Convert.ToInt32(cell[4]);
+                        countTotalJun1000++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "11:00")
+                    {
+                        tempTotalJun1100 = tempTotalJun1100 + Convert.ToInt32(cell[4]);
+                        countTotalJun1100++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "12:00")
+                    {
+                        tempTotalJun1200 = tempTotalJun1200 + Convert.ToInt32(cell[4]);
+                        countTotalJun1200++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "13:00")
+                    {
+                        tempTotalJun1300 = tempTotalJun1300 + Convert.ToInt32(cell[4]);
+                        countTotalJun1300++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "14:00")
+                    {
+                        tempTotalJun1400 = tempTotalJun1400 + Convert.ToInt32(cell[4]);
+                        countTotalJun1400++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "15:00")
+                    {
+                        tempTotalJun1500 = tempTotalJun1500 + Convert.ToInt32(cell[4]);
+                        countTotalJun1500++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "16:00")
+                    {
+                        tempTotalJun1600 = tempTotalJun1600 + Convert.ToInt32(cell[4]);
+                        countTotalJun1600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "17:00")
+                    {
+                        tempTotalJun1700 = tempTotalJun1700 + Convert.ToInt32(cell[4]);
+                        countTotalJun1700++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "18:00")
+                    {
+                        tempTotalJun1800 = tempTotalJun1800 + Convert.ToInt32(cell[4]);
+                        countTotalJun1800++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "19:00")
+                    {
+                        tempTotalJun1900 = tempTotalJun1900 + Convert.ToInt32(cell[4]);
+                        countTotalJun1900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "06" && cell[1] == "20:00")
+                    {
+                        tempTotalJun2000 = tempTotalJun2000 + Convert.ToInt32(cell[4]);
+                        countTotalJun2000++;
+                    }
+                    #endregion
+
+                    //Jul Averages over the hours
+                    #region
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "07:00")
+                    {
+                        tempTotalJul0600 = tempTotalJul0600 + Convert.ToInt32(cell[4]);
+                        countTotalJul0600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "07:00")
+                    {
+                        tempTotalJul0700 = tempTotalJul0700 + Convert.ToInt32(cell[4]);
+                        countTotalJul0700++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "08:00")
+                    {
+                        tempTotalJul0800 = tempTotalJul0800 + Convert.ToInt32(cell[4]);
+                        countTotalJul0800++;
+                    }
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "09:00")
+                    {
+                        tempTotalJul0900 = tempTotalJul0900 + Convert.ToInt32(cell[4]);
+                        countTotalJul0900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "10:00")
+                    {
+                        tempTotalJul1000 = tempTotalJul1000 + Convert.ToInt32(cell[4]);
+                        countTotalJul1000++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "11:00")
+                    {
+                        tempTotalJul1100 = tempTotalJul1100 + Convert.ToInt32(cell[4]);
+                        countTotalJul1100++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "12:00")
+                    {
+                        tempTotalJul1200 = tempTotalJul1200 + Convert.ToInt32(cell[4]);
+                        countTotalJul1200++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "13:00")
+                    {
+                        tempTotalJul1300 = tempTotalJul1300 + Convert.ToInt32(cell[4]);
+                        countTotalJul1300++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "14:00")
+                    {
+                        tempTotalJul1400 = tempTotalJul1400 + Convert.ToInt32(cell[4]);
+                        countTotalJul1400++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "15:00")
+                    {
+                        tempTotalJul1500 = tempTotalJul1500 + Convert.ToInt32(cell[4]);
+                        countTotalJul1500++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "16:00")
+                    {
+                        tempTotalJul1600 = tempTotalJul1600 + Convert.ToInt32(cell[4]);
+                        countTotalJul1600++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "17:00")
+                    {
+                        tempTotalJul1700 = tempTotalJul1700 + Convert.ToInt32(cell[4]);
+                        countTotalJul1700++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "18:00")
+                    {
+                        tempTotalJul1800 = tempTotalJul1800 + Convert.ToInt32(cell[4]);
+                        countTotalJul1800++;
+                    }
+
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "19:00")
+                    {
+                        tempTotalJul1900 = tempTotalJul1900 + Convert.ToInt32(cell[4]);
+                        countTotalJul1900++;
+                    }
+
+                    if (cell[0][0].ToString() + cell[0][1].ToString() == "07" && cell[1] == "20:00")
+                    {
+                        tempTotalJul2000 = tempTotalJul2000 + Convert.ToInt32(cell[4]);
+                        countTotalJul2000++;
+                    }
+                    #endregion
+
+
+
+
+
 
 
 
@@ -1062,13 +1280,14 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                 {
 
                     Console.WriteLine(e.Message);
-
                 }
-
-
             }
 
-
+            /* Calculate averages and append to .txt file. in JSON format.  This file will hold a lot of data.
+             * Eventually, this is one area I will augment to migrate to a database.  If I want to hold all 70+ Colums
+             * of data, I can omit most of this code and simply use the rows and cells loops above.  This will dramatically simplify the code
+             * but it glances over the point of this exercise.
+             */
 
             //Jan ToFile After Math
             #region
@@ -1078,7 +1297,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageJan0600 = tempTotalJan0600 / countTotalJan0600;
 
             monthAverageJan += AverageJan0600;
-
             sb.Append($"\"Jan0600\": {Math.Floor(AverageJan0600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
             File.AppendAllText(targetPath, Environment.NewLine);
@@ -1099,9 +1317,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
 
             AverageJan0800 = tempTotalJan0800 / countTotalJan0800;
             Console.WriteLine(Math.Floor(AverageJan0800) + " is the average for Jan @ 0800");
-            if (AverageJan0800 > 0)
-
-                monthAverageJan += AverageJan0800;
             sb.Append($"\"Jan0800\": {Math.Floor(AverageJan0800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
             File.AppendAllText(targetPath, Environment.NewLine);
@@ -1264,7 +1479,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
 
             sb.Append($"\"Feb0600\": {Math.Floor(AverageFeb0600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1275,7 +1489,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb0700;
             sb.Append($"\"Feb0700\": {Math.Floor(AverageFeb0700)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1286,7 +1499,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb0800;
             sb.Append($"\"Feb0800\": {Math.Floor(AverageFeb0800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1297,7 +1509,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb0900;
             sb.Append($"\"Feb0900\": {Math.Floor(AverageFeb0900)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1308,7 +1519,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1000;
             sb.Append($"\"Feb1000\": {Math.Floor(AverageFeb1000)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1319,7 +1529,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1100;
             sb.Append($"\"Feb1100\": {Math.Floor(AverageFeb1100)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1330,7 +1539,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1200;
             sb.Append($"\"Feb1200\": {Math.Floor(AverageFeb1200)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1341,7 +1549,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1300;
             sb.Append($"\"Feb1300\": {Math.Floor(AverageFeb1300)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1352,7 +1559,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1400;
             sb.Append($"\"Feb1400\": {Math.Floor(AverageFeb1400)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1363,7 +1569,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1500;
             sb.Append($"\"Feb1500\": {Math.Floor(AverageFeb1500)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1374,7 +1579,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1600;
             sb.Append($"\"Feb1600\": {Math.Floor(AverageFeb1600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1385,7 +1589,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1700;
             sb.Append($"\"Feb1700\": {Math.Floor(AverageFeb1700)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1396,7 +1599,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1800;
             sb.Append($"\"Feb1800\": {Math.Floor(AverageFeb1800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1407,7 +1609,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb1900;
             sb.Append($"\"Feb1900\": {Math.Floor(AverageFeb1900)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1418,7 +1619,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             AverageForMonthFeb += AverageFeb2000;
             sb.Append($"\"Feb2000\": {Math.Floor(AverageFeb2000)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1442,7 +1642,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             averageMarch += AverageMar0600;
             sb.Append($"\"Mar0600\": {Math.Floor(AverageMar0600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1453,7 +1652,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             averageMarch += AverageMar0700;
             sb.Append($"\"Mar0700\": {Math.Floor(AverageMar0700)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1464,7 +1662,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             averageMarch += AverageMar0800;
             sb.Append($"\"Mar0800\": {Math.Floor(AverageMar0800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1613,7 +1810,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
 
             sb.Append($"\"Apr0600\": {Math.Floor(AverageApr0600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1625,7 +1821,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr0700;
             sb.Append($"\"Apr0700\": {Math.Floor(AverageApr0700)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1638,7 +1833,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr0800;
             sb.Append($"\"Apr0800\": {Math.Floor(AverageApr0800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1650,7 +1844,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr0900;
             sb.Append($"\"Apr0900\": {Math.Floor(AverageApr0900)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1662,7 +1855,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1000;
             sb.Append($"\"Apr1000\": {Math.Floor(AverageApr1000)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1674,7 +1866,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1100;
             sb.Append($"\"Apr1100\": {Math.Floor(AverageApr1100)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1686,7 +1877,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1200;
             sb.Append($"\"Apr1200\": {Math.Floor(AverageApr1200)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1698,7 +1888,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1300;
             sb.Append($"\"Apr1300\": {Math.Floor(AverageApr1300)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1710,7 +1899,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1400;
             sb.Append($"\"Apr1400\": {Math.Floor(AverageApr1400)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1722,7 +1910,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1500;
             sb.Append($"\"Apr1500\": {Math.Floor(AverageApr1500)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1734,7 +1921,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1600;
             sb.Append($"\"Apr1600\": {Math.Floor(AverageApr1600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1745,7 +1931,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1700;
             sb.Append($"\"Apr1700\": {Math.Floor(AverageApr1700)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1756,7 +1941,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1800;
             sb.Append($"\"Apr1800\": {Math.Floor(AverageApr1800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1767,7 +1951,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr1900;
             sb.Append($"\"Apr1900\": {Math.Floor(AverageApr1900)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1778,7 +1961,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageApr += AverageApr2000;
             sb.Append($"\"Apr2000\": {Math.Floor(AverageApr2000)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1803,7 +1985,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
 
             sb.Append($"\"May0600\": {Math.Floor(AverageMay0600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1815,7 +1996,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay0700;
             sb.Append($"\"May0700\": {Math.Floor(AverageMay0700)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1828,7 +2008,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay0800;
             sb.Append($"\"May0800\": {Math.Floor(AverageMay0800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1840,7 +2019,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay0900;
             sb.Append($"\"May0900\": {Math.Floor(AverageMay0900)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1852,7 +2030,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1000;
             sb.Append($"\"May1000\": {Math.Floor(AverageMay1000)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1864,7 +2041,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1100;
             sb.Append($"\"May1100\": {Math.Floor(AverageMay1100)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1876,7 +2052,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1200;
             sb.Append($"\"May1200\": {Math.Floor(AverageMay1200)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1888,7 +2063,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1300;
             sb.Append($"\"May1300\": {Math.Floor(AverageMay1300)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1900,7 +2074,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1400;
             sb.Append($"\"May1400\": {Math.Floor(AverageMay1400)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1912,7 +2085,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1500;
             sb.Append($"\"May1500\": {Math.Floor(AverageMay1500)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1924,7 +2096,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1600;
             sb.Append($"\"May1600\": {Math.Floor(AverageMay1600)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1935,7 +2106,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1700;
             sb.Append($"\"May1700\": {Math.Floor(AverageMay1700)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1946,7 +2116,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1800;
             sb.Append($"\"May1800\": {Math.Floor(AverageMay1800)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1957,7 +2126,6 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay1900;
             sb.Append($"\"May1900\": {Math.Floor(AverageMay1900)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
@@ -1968,16 +2136,363 @@ namespace Solar_Project_CSV_To_JSON_Console_App
             monthAverageMay += AverageMay2000;
             sb.Append($"\"May2000\": {Math.Floor(AverageMay2000)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
-            //ENVIRONMENT.NEWLINE ADDS THE NEXT LINE.  ELSE THIS WILL ADD TEXT TO THE SAME ROW.
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
             Console.WriteLine();
 
 
-
-
             Console.WriteLine(Math.Floor(monthAverageMay) + " is the monthly average for May");
             sb.Append($"\"MayAverage\": {Math.Floor(monthAverageMay)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+            #endregion
+
+            //Jun ToFile After Math
+            #region
+
+            Console.WriteLine(Math.Floor(tempTotalJun0600) + " is the average for Jun @ 0600: ");
+            AverageJun0600 = tempTotalJun0600 / countTotalJun0600;
+
+            monthAverageJun += AverageJun0600;
+
+            sb.Append($"\"Jun0600\": {Math.Floor(AverageJun0600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun0700 = tempTotalJun0700 / countTotalJun0700;
+            Console.WriteLine(Math.Floor(AverageJun0700) + " is the average for Jun @ 0700");
+
+            monthAverageJun += AverageJun0700;
+            sb.Append($"\"Jun0700\": {Math.Floor(AverageJun0700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun0800 = tempTotalJun0800 / countTotalJun0800;
+            Console.WriteLine(Math.Floor(AverageJun0800) + " is the average for Jun @ 0800");
+
+
+            monthAverageJun += AverageJun0800;
+            sb.Append($"\"Jun0800\": {Math.Floor(AverageJun0800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun0900 = tempTotalJun0900 / countTotalJun0900;
+            Console.WriteLine(Math.Floor(AverageJun0900) + " is the average for Jun @ 0900");
+
+            monthAverageJun += AverageJun0900;
+            sb.Append($"\"Jun0900\": {Math.Floor(AverageJun0900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1000 = tempTotalJun1000 / countTotalJun1000;
+            Console.WriteLine(Math.Floor(AverageJun1000) + " is the average for Jun @ 1000");
+
+            monthAverageJun += AverageJun1000;
+            sb.Append($"\"Jun1000\": {Math.Floor(AverageJun1000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1100 = tempTotalJun1100 / countTotalJun1100;
+            Console.WriteLine(Math.Floor(AverageJun1100) + " is the average for Jun @ 1100");
+
+            monthAverageJun += AverageJun1100;
+            sb.Append($"\"Jun1100\": {Math.Floor(AverageJun1100)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1200 = tempTotalJun1200 / countTotalJun1200;
+            Console.WriteLine(Math.Floor(AverageJun1200) + " is the average for Jun @ 1200");
+
+            monthAverageJun += AverageJun1200;
+            sb.Append($"\"Jun1200\": {Math.Floor(AverageJun1200)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1300 = tempTotalJun1300 / countTotalJun1300;
+            Console.WriteLine(Math.Floor(AverageJun1300) + " is the average for Jun @ 1300");
+
+            monthAverageJun += AverageJun1300;
+            sb.Append($"\"Jun1300\": {Math.Floor(AverageJun1300)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1400 = tempTotalJun1400 / countTotalJun1400;
+            Console.WriteLine(Math.Floor(AverageJun1400) + " is the average for Jun @ 1400");
+
+            monthAverageJun += AverageJun1400;
+            sb.Append($"\"Jun1400\": {Math.Floor(AverageJun1400)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1500 = tempTotalJun1500 / countTotalJun1500;
+            Console.WriteLine(Math.Floor(AverageJun1500) + " is the average for Jun @ 1500");
+
+            monthAverageJun += AverageJun1500;
+            sb.Append($"\"Jun1500\": {Math.Floor(AverageJun1500)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1600 = tempTotalJun1600 / countTotalJun1600;
+            Console.WriteLine(Math.Floor(AverageJun1600) + " is the average for Jun @ 1600");
+
+            monthAverageJun += AverageJun1600;
+            sb.Append($"\"Jun1600\": {Math.Floor(AverageJun1600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1700 = tempTotalJun1700 / countTotalJun1700;
+            Console.WriteLine(Math.Floor(AverageJun1700) + " is the average for Jun @ 1700");
+            monthAverageJun += AverageJun1700;
+            sb.Append($"\"Jun1700\": {Math.Floor(AverageJun1700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1800 = tempTotalJun1800 / countTotalJun1800;
+            Console.WriteLine(Math.Floor(AverageJun1800) + " is the average for Jun @ 1800");
+            monthAverageJun += AverageJun1800;
+            sb.Append($"\"Jun1800\": {Math.Floor(AverageJun1800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun1900 = tempTotalJun1900 / countTotalJun1900;
+            Console.WriteLine(Math.Floor(AverageJun1900) + " is the average for Jun @ 1900");
+            monthAverageJun += AverageJun1900;
+            sb.Append($"\"Jun1900\": {Math.Floor(AverageJun1900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJun2000 = tempTotalJun2000 / countTotalJun2000;
+            Console.WriteLine(Math.Floor(AverageJun2000) + " is the average for Jun @ 1700");
+            monthAverageJun += AverageJun2000;
+            sb.Append($"\"Jun2000\": {Math.Floor(AverageJun2000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            Console.WriteLine(Math.Floor(monthAverageJun) + " is the monthly average for Jun");
+            sb.Append($"\"JunAverage\": {Math.Floor(monthAverageJun)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+            #endregion
+
+            //Jul ToFile After Math
+            #region
+
+            Console.WriteLine(Math.Floor(tempTotalJul0600) + " is the average for Jul @ 0600: ");
+            AverageJul0600 = tempTotalJul0600 / countTotalJul0600;
+
+            monthAverageJul += AverageJul0600;
+
+            sb.Append($"\"Jul0600\": {Math.Floor(AverageJul0600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul0700 = tempTotalJul0700 / countTotalJul0700;
+            Console.WriteLine(Math.Floor(AverageJul0700) + " is the average for Jul @ 0700");
+
+            monthAverageJul += AverageJul0700;
+            sb.Append($"\"Jul0700\": {Math.Floor(AverageJul0700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul0800 = tempTotalJul0800 / countTotalJul0800;
+            Console.WriteLine(Math.Floor(AverageJul0800) + " is the average for Jul @ 0800");
+
+
+            monthAverageJul += AverageJul0800;
+            sb.Append($"\"Jul0800\": {Math.Floor(AverageJul0800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul0900 = tempTotalJul0900 / countTotalJul0900;
+            Console.WriteLine(Math.Floor(AverageJul0900) + " is the average for Jul @ 0900");
+
+            monthAverageJul += AverageJul0900;
+            sb.Append($"\"Jul0900\": {Math.Floor(AverageJul0900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1000 = tempTotalJul1000 / countTotalJul1000;
+            Console.WriteLine(Math.Floor(AverageJul1000) + " is the average for Jul @ 1000");
+
+            monthAverageJul += AverageJul1000;
+            sb.Append($"\"Jul1000\": {Math.Floor(AverageJul1000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1100 = tempTotalJul1100 / countTotalJul1100;
+            Console.WriteLine(Math.Floor(AverageJul1100) + " is the average for Jul @ 1100");
+
+            monthAverageJul += AverageJul1100;
+            sb.Append($"\"Jul1100\": {Math.Floor(AverageJul1100)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1200 = tempTotalJul1200 / countTotalJul1200;
+            Console.WriteLine(Math.Floor(AverageJul1200) + " is the average for Jul @ 1200");
+
+            monthAverageJul += AverageJul1200;
+            sb.Append($"\"Jul1200\": {Math.Floor(AverageJul1200)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1300 = tempTotalJul1300 / countTotalJul1300;
+            Console.WriteLine(Math.Floor(AverageJul1300) + " is the average for Jul @ 1300");
+
+            monthAverageJul += AverageJul1300;
+            sb.Append($"\"Jul1300\": {Math.Floor(AverageJul1300)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1400 = tempTotalJul1400 / countTotalJul1400;
+            Console.WriteLine(Math.Floor(AverageJul1400) + " is the average for Jul @ 1400");
+
+            monthAverageJul += AverageJul1400;
+            sb.Append($"\"Jul1400\": {Math.Floor(AverageJul1400)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1500 = tempTotalJul1500 / countTotalJul1500;
+            Console.WriteLine(Math.Floor(AverageJul1500) + " is the average for Jul @ 1500");
+
+            monthAverageJul += AverageJul1500;
+            sb.Append($"\"Jul1500\": {Math.Floor(AverageJul1500)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1600 = tempTotalJul1600 / countTotalJul1600;
+            Console.WriteLine(Math.Floor(AverageJul1600) + " is the average for Jul @ 1600");
+
+            monthAverageJul += AverageJul1600;
+            sb.Append($"\"Jul1600\": {Math.Floor(AverageJul1600)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1700 = tempTotalJul1700 / countTotalJul1700;
+            Console.WriteLine(Math.Floor(AverageJul1700) + " is the average for Jul @ 1700");
+            monthAverageJul += AverageJul1700;
+            sb.Append($"\"Jul1700\": {Math.Floor(AverageJul1700)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1800 = tempTotalJul1800 / countTotalJul1800;
+            Console.WriteLine(Math.Floor(AverageJul1800) + " is the average for Jul @ 1800");
+            monthAverageJul += AverageJul1800;
+            sb.Append($"\"Jul1800\": {Math.Floor(AverageJul1800)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul1900 = tempTotalJul1900 / countTotalJul1900;
+            Console.WriteLine(Math.Floor(AverageJul1900) + " is the average for Jul @ 1900");
+            monthAverageJul += AverageJul1900;
+            sb.Append($"\"Jul1900\": {Math.Floor(AverageJul1900)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            AverageJul2000 = tempTotalJul2000 / countTotalJul2000;
+            Console.WriteLine(Math.Floor(AverageJul2000) + " is the average for Jul @ 1700");
+            monthAverageJul += AverageJul2000;
+            sb.Append($"\"Jul2000\": {Math.Floor(AverageJul2000)}" + ',');
+            File.AppendAllText(targetPath, sb.ToString());
+            File.AppendAllText(targetPath, Environment.NewLine);
+            sb.Clear();
+            Console.WriteLine();
+
+
+            Console.WriteLine(Math.Floor(monthAverageJul) + " is the monthly average for Jul");
+            sb.Append($"\"JulAverage\": {Math.Floor(monthAverageJul)}" + ',');
             File.AppendAllText(targetPath, sb.ToString());
             File.AppendAllText(targetPath, Environment.NewLine);
             sb.Clear();
