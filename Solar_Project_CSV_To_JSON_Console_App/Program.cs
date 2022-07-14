@@ -822,10 +822,10 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                 myfile.Close();
             }
 
-            sb.Append("[");
-            File.AppendAllText(targetPath, sb.ToString());
-            File.AppendAllText(targetPath, Environment.NewLine);
-            sb.Clear();
+            //sb.Append("[");
+            //File.AppendAllText(targetPath, sb.ToString());
+            //File.AppendAllText(targetPath, Environment.NewLine);
+            //sb.Clear();
 
             string[] row = File.ReadAllLines(path);
 
@@ -860,7 +860,7 @@ namespace Solar_Project_CSV_To_JSON_Console_App
                         File.AppendAllText(targetPath, Environment.NewLine);
                         sb.Clear();
 
-                        sb.Append($"\"State\": {cell[2]}" + ',');
+                        sb.Append($"\"State\": \"{cell[2]}\"" + ',');
                         File.AppendAllText(targetPath, sb.ToString());
                         File.AppendAllText(targetPath, Environment.NewLine);
                         sb.Clear();
